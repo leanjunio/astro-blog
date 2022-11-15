@@ -40,7 +40,8 @@ Storing an object in a variable like so:
 ```js
 const  myObject = {};
 ```
-Does not follow the same process of storing a [primitive type](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#:~:text=In%20JavaScript%2C%20a%20primitive%20(primitive,has%20no%20methods%20or%20properties.) in a variable as such
+
+Does not follow the same process of storing a [primitive type](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) in a variable as such
 
 ```js
 const number = 4;
@@ -52,7 +53,7 @@ In the case of the object (any reference type really), only the address or locat
 
 #### 3. Understand how [closures](https://medium.com/@samkwon521/eli5-closures-c0018a23e3c5) work
 
-> "Closure is when a function is able to remember and access its lexical scope even when the function is executing outside its lexical scope.”
+> Closure is when a function is able to remember and access its lexical scope even when the function is executing outside its lexical scope.
 
 ```javascript
 function outerFunction() {
@@ -69,11 +70,15 @@ function outerFunction() {
 // assigned the same address as what's returned from outerFunction()
 var basicallyTheInnerFunction = outerFunction();
 
-// remember that the basicallyTheInnerFunction and the function returned from outerFunction() now shares the same address
-// this means they're pointing to the same location in memory
-// when this executes, it would print out the value of 'foo' even though outerFunction() has already executed and is technically 'done'
-// the function still has the same access to its "lexical scope" even though it is executing outside of the outerFunction
-secondBar();
+secondBar(); // foo
 ```
 
+The string "foo" gets returned here because `secondBar` and `innerFunction` are pointing to the same location in memory.
+
+That piece of memory has access to the lexical context `innerFunction` has which includes the variable `foo`
+and its content - the string "foo".
+
+Due to this ability to "access the referential context of a previously executed function (the closure)",
+the variable `foo` is not garbage collected until `secondBar` is popped off of the call stack which at that point,
+the event loop can go back to doing what's next on its agenda.
 
