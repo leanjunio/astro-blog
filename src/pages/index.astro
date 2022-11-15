@@ -18,7 +18,7 @@ const sortedPosts = getSortedPosts(posts);
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="featured">
+    <!-- <section id="featured">
       <h2>Featured</h2>
       <ul>
         {
@@ -34,6 +34,10 @@ const sortedPosts = getSortedPosts(posts);
           )
         }
       </ul>
+    </section> -->
+    <section id="hero">
+      <h3>Welcome to my blog</h3>
+      <p>I hope to use this blog as a notebook of sorts. hopefully you find it useful as well.</p>
     </section>
 
     <Hr />
@@ -73,10 +77,10 @@ const sortedPosts = getSortedPosts(posts);
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8;
+    @apply py-8;
   }
-  #hero h1 {
-    @apply inline-block font-bold my-4 sm:my-8 text-3xl sm:text-5xl;
+  #hero h3 {
+    @apply inline-block font-bold my-4 sm:my-8 sm:text-3xl;
   }
   #hero .rss-link {
     @apply mb-6;
