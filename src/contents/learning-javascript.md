@@ -17,9 +17,9 @@ These are just some of the tips I wish I knew when I started learning JavaScript
 
 #### 1. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript ) is your friend
 
-It's very easy to get angry at JavaScript cause it does these things:
+It's very easy to get angry at JavaScript cause it can do these:
 
-![Why](../assets/why.png)
+![Why](https://res.cloudinary.com/practicaldev/image/fetch/s--Ysm3UtDq--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/4n583bhdqnz03mq3t13v.png)
 
 Understanding how it works is going to be a lot more helpful than going against it.
 
