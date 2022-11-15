@@ -1,4 +1,4 @@
-# AstroPaper 📄
+# Blog 📄
 
 ![astro-paper](https://user-images.githubusercontent.com/53733092/192439847-534ea3f9-3294-4509-b732-5810bc2db09a.png)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
