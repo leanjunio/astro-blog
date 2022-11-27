@@ -7,7 +7,7 @@ tags:
 - "TypeScript"
 - "Higher Order Functions"
 featured: true
-datetime: 2022-11-15T15:43:47.785Z
+datetime: 2022-11-27T16:31:45.798Z
 description: What are higher order functions?
 ---
 In functional programming languages such as JavaScript, functions are also **values**:
